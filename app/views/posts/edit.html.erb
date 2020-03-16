@@ -1,0 +1,5 @@
+<h1>編集</h1>
+  <%= form_with model: @post, local: true do |form| %>
+  <%= form.text_field :text %>
+  <%= form.submit '編集' %>
+<% end %>
