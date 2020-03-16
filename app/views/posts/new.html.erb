@@ -1,0 +1,5 @@
+<h1>新規投稿</h1>
+<%= form_with model: @post, local: true do |form| %>
+  <%= form.text_field :text %>
+  <%= form.submit '投稿' %>
+<% end %>
