@@ -12,8 +12,11 @@ class PostsController < ApplicationController
     redirect_to root_path
   end
 
-  private
+  def show
+    @post = Post.find(params[:id])
+  end
 
+  private
   def post_params
     params.require(:post).permit(:text)
   end
